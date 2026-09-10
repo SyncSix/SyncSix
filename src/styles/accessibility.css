@@ -1,0 +1,40 @@
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .secao {
+    scroll-margin-top: var(--altura-cabecalho);
+  }
+
+  .linha {
+    stroke-dasharray: 230;
+    stroke-dashoffset: 230;
+    animation: desenhar-linha 1s ease forwards;
+  }
+
+  .no {
+    opacity: 0;
+    animation: surgir-no 0.5s ease forwards;
+  }
+}
+
+@keyframes desenhar-linha {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes surgir-no {
+  to {
+    opacity: 1;
+  }
+}

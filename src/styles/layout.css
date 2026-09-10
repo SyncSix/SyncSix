@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 0 var(--espaco-lg);
+}
+
+.secao {
+  padding: var(--espaco-2xl) 0;
+  border-top: 1px solid var(--cor-linha);
+}
+
+.secao__titulo {
+  font-size: 2.25rem;
+  max-width: 20ch;
+}
+
+.secao__texto {
+  margin-top: var(--espaco-md);
+  max-width: 68ch;
+  color: var(--cor-tinta-suave);
+  font-size: 1.0625rem;
+}
+
+.secao__intro {
+  margin-top: var(--espaco-sm);
+  max-width: 60ch;
+  color: var(--cor-tinta-suave);
+  font-size: 1.0625rem;
+}

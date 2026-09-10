@@ -1,0 +1,26 @@
+:root {
+  --cor-fundo: #f2f4f6;
+  --cor-superficie: #ffffff;
+  --cor-tinta: #16223b;
+  --cor-tinta-suave: #4c5a72;
+  --cor-linha: #d7dce2;
+  --cor-destaque: #1e5ba8;
+  --cor-destaque-hover: #154a87;
+  --cor-destaque-rgb: 30, 111, 92;
+  --cor-link-social: #1e5ba8;
+  --cor-link-social-hover: #154a87;
+
+  --fonte-titulo: "Space Grotesk", system-ui, sans-serif;
+  --fonte-texto: "IBM Plex Sans", system-ui, sans-serif;
+
+  --espaco-xs: 0.5rem;
+  --espaco-sm: 1rem;
+  --espaco-md: 1.5rem;
+  --espaco-lg: 2.5rem;
+  --espaco-xl: 4rem;
+  --espaco-2xl: 6rem;
+
+  --largura-maxima: 1160px;
+  --raio: 3px;
+  --altura-cabecalho: 76px;
+}

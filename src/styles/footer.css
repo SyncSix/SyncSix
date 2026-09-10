@@ -1,0 +1,18 @@
+.rodape {
+  background-color: var(--cor-tinta);
+  color: rgba(255, 255, 255, 0.75);
+  padding: var(--espaco-lg) 0;
+}
+
+.rodape__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--espaco-sm);
+  font-size: 0.875rem;
+}
+
+.rodape__container a:hover {
+  color: #ffffff;
+}

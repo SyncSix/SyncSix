@@ -1,0 +1,92 @@
+.contato__grid {
+  margin-top: var(--espaco-xl);
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--espaco-xl);
+}
+
+.form__campo {
+  margin-bottom: var(--espaco-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form__campo label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form__campo input,
+.form__campo textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+  resize: vertical;
+}
+
+.form__campo input:focus,
+.form__campo textarea:focus {
+  outline: none;
+  border-color: var(--cor-destaque);
+}
+
+.form__campo-invalido {
+  border-color: #dc2626 !important;
+  background-color: rgba(220, 38, 38, 0.02);
+}
+
+.form__campo-invalido:focus {
+  border-color: #dc2626 !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.form__campo-valido {
+  border-color: #16a34a !important;
+  background-color: rgba(22, 163, 74, 0.02);
+}
+
+.form__erro {
+  display: block;
+  font-size: 0.8rem;
+  color: #dc2626;
+  margin-top: -0.2rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form__nota {
+  margin-top: var(--espaco-sm);
+  font-size: 0.825rem;
+  color: var(--cor-tinta-suave);
+  max-width: 48ch;
+}
+
+.contato__github {
+  padding: var(--espaco-lg);
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio);
+  background-color: var(--cor-fundo);
+  align-self: start;
+}
+
+.contato__github h3 {
+  font-size: 1.1rem;
+}
+
+.contato__github p {
+  margin: var(--espaco-xs) 0 var(--espaco-md);
+  font-size: 0.9rem;
+  color: var(--cor-tinta-suave);
+}

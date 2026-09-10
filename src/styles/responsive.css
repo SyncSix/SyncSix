@@ -1,0 +1,107 @@
+@media (max-width: 960px) {
+  .container {
+    padding: 0 var(--espaco-md);
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__grafico-wrap {
+    margin-top: var(--espaco-lg);
+    order: -1;
+  }
+
+  .hero__grafico {
+    max-width: 220px;
+  }
+
+  .disciplinas__grid,
+  .equipe__grid,
+  .projetos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contato__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contato__github {
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav {
+    position: absolute;
+    top: var(--altura-cabecalho);
+    left: 0;
+    right: 0;
+    background-color: var(--cor-fundo);
+    border-bottom: 1px solid var(--cor-linha);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .nav.aberto {
+    max-height: 320px;
+  }
+
+  .nav__lista {
+    flex-direction: column;
+    gap: 0;
+    padding: var(--espaco-sm) var(--espaco-md) var(--espaco-md);
+  }
+
+  .nav__lista li {
+    border-bottom: 1px solid var(--cor-linha);
+  }
+
+  .nav__link {
+    display: block;
+    padding: var(--espaco-sm) 0;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .secao__titulo {
+    font-size: 1.75rem;
+  }
+
+  .disciplinas__grid,
+  .equipe__grid,
+  .projetos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .membro__link {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .membro__link svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .contato__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contato__github {
+    order: -1;
+  }
+
+  .hero__acoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rodape__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
