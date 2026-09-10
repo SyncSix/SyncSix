@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SyncSix — Projeto Integrador · Fatec Votorantim</title>
+    <meta
+      name="description"
+      content="SyncSix é a equipe de 6 integrantes do curso de Desenvolvimento de Software Multiplataforma da Fatec Votorantim, responsável pelo Projeto Integrador desenvolvido para o Grupo Panna."
+    />
+
+    <!-- EDITAR: quando o site estiver publicado, adicione aqui as tags og:url e og:image com a URL final e uma imagem de capa -->
+    <meta property="og:title" content="SyncSix — Projeto Integrador" />
+    <meta
+      property="og:description"
+      content="Equipe de 6 integrantes da Fatec Votorantim construindo um sistema de governança para o Grupo Panna."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles/index.css" />
+  </head>
+  <body>
+    <header class="cabecalho" id="cabecalho">
+      <div class="container cabecalho__container">
+        <a href="#topo" class="logo" aria-label="SyncSix — voltar ao topo">
+          <img
+            src="src/images/Logo2 SyncSix sem fundo.png"
+            alt=""
+            width="150"
+          />
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Navegação principal">
+          <ul class="nav__lista">
+            <li><a href="#sobre" class="nav__link">Sobre</a></li>
+            <li><a href="#equipe" class="nav__link">Equipe</a></li>
+            <li><a href="#projetos" class="nav__link">Projetos</a></li>
+            <li><a href="#contato" class="nav__link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="topo">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__texto">
+            <p class="hero__contexto">
+              Projeto Integrador do curso de Desenvolvimento de Software
+              Multiplataforma, na Fatec Votorantim.
+            </p>
+            <h1 class="hero__titulo">SyncSix</h1>
+            <p class="hero__subtitulo">
+              Somos os seis integrantes responsáveis por planejar, projetar e
+              construir, ao longo deste semestre, o novo sistema de governança
+              do Grupo Panna.
+            </p>
+            <div class="hero__acoes">
+              <a href="#equipe" class="botao botao--primario"
+                >Conhecer a equipe</a
+              >
+              <a href="#contato" class="botao botao--contorno"
+                >Falar com a gente</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__grafico-wrap">
+            <img
+              src="src/images/Logo SyncSix sem fundo.png"
+              alt=""
+              width="350"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="secao sobre">
+        <div class="container">
+          <h2 class="secao__titulo">O projeto</h2>
+          <p class="secao__texto">
+            A SyncSix reúne seis alunos do curso de Desenvolvimento de Software
+            Multiplataforma da Fatec Votorantim para o desenvolvimento do
+            Projeto Integrador do semestre. O desafio proposto é construir, para
+            o Grupo Panna, um site voltado à área de Governança — aplicando na
+            prática o conteúdo estudado em cada disciplina do curso.
+          </p>
+
+          <p class="disciplinas__intro">
+            Cada disciplina do semestre contribui com uma frente do projeto:
+          </p>
+          <ul class="disciplinas__grid">
+            <li class="disciplina">
+              <h3 class="disciplina__nome">Algoritmos e Lógica de Programação</h3>
+              <p class="disciplina__texto">
+                Lógica de programação e estrutura das funcionalidades do
+                sistema.
+              </p>
+            </li>
+            <li class="disciplina">
+              <h3 class="disciplina__nome">Modelagem de Banco de Dados</h3>
+              <p class="disciplina__texto">
+                Modelagem e armazenamento das informações de governança.
+              </p>
+            </li>
+            <li class="disciplina">
+              <h3 class="disciplina__nome">Desenvolvimento Web 1</h3>
+              <p class="disciplina__texto">
+                Construção do site, do front-end à integração de conteúdo.
+              </p>
+            </li>
+            <li class="disciplina">
+              <h3 class="disciplina__nome">Design Digital</h3>
+              <p class="disciplina__texto">
+                Identidade visual, layout e experiência de uso da interface.
+              </p>
+            </li>
+            <li class="disciplina">
+              <h3 class="disciplina__nome">Engenharia de Software 1</h3>
+              <p class="disciplina__texto">
+                Levantamento de requisitos, processo e documentação do projeto.
+              </p>
+            </li>
+            <li class="disciplina">
+              <h3 class="disciplina__nome">Sistemas Operacionais e Redes de Computadores</h3>
+              <p class="disciplina__texto">
+                Infraestrutura, hospedagem e ambiente de execução do site.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="equipe" class="secao equipe">
+        <div class="container">
+          <h2 class="secao__titulo">Equipe</h2>
+          <p class="secao__intro">
+            Seis integrantes, cada um com uma parte do projeto sob sua
+            responsabilidade.
+          </p>
+
+          <div class="equipe__grid">
+            <!-- EDITAR: duplique este bloco <article> para cada integrante, substituindo foto, nome e descrição -->
+            <article class="membro">
+              <div class="imagem-placeholder membro__foto">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2c-4.2 0-8 2.2-8 5v2h16v-2c0-2.8-3.8-5-8-5Z"
+                  />
+                </svg>
+                <span>Foto do integrante</span>
+              </div>
+              <h3 class="membro__nome">Guilherme Augusto</h3>
+              <p class="membro__descricao">
+                Breve descrição sobre o integrante e sua atuação no projeto.
+              </p>
+              <div class="membro__redes">
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="GitHub de Guilherme Augusto"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6.99.07 1.52 1.03 1.52 1.03.88 1.52 2.32 1.08 2.89.82.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="LinkedIn de Guilherme Augusto"
+                  title="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.74c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.74h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="Portfólio de Guilherme Augusto"
+                  title="Portfólio"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="membro">
+              <div class="imagem-placeholder membro__foto">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2c-4.2 0-8 2.2-8 5v2h16v-2c0-2.8-3.8-5-8-5Z"
+                  />
+                </svg>
+                <span>Foto do integrante</span>
+              </div>
+              <h3 class="membro__nome">Leonardo Vinicius</h3>
+              <p class="membro__descricao">
+                Breve descrição sobre o integrante e sua atuação no projeto.
+              </p>
+              <div class="membro__redes">
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="GitHub de Leonardo Vinicius"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6.99.07 1.52 1.03 1.52 1.03.88 1.52 2.32 1.08 2.89.82.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="LinkedIn de Leonardo Vinicius"
+                  title="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.74c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.74h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="Portfólio de Leonardo Vinicius"
+                  title="Portfólio"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="membro">
+              <div class="imagem-placeholder membro__foto">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2c-4.2 0-8 2.2-8 5v2h16v-2c0-2.8-3.8-5-8-5Z"
+                  />
+                </svg>
+                <span>Foto do integrante</span>
+              </div>
+              <h3 class="membro__nome">Maria Eduarda Fernandes</h3>
+              <p class="membro__descricao">
+                Breve descrição sobre o integrante e sua atuação no projeto.
+              </p>
+              <div class="membro__redes">
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="GitHub de Maria Eduarda Fernandes"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6.99.07 1.52 1.03 1.52 1.03.88 1.52 2.32 1.08 2.89.82.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="LinkedIn de Maria Eduarda Fernandes"
+                  title="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.74c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.74h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="Portfólio de Maria Eduarda Fernandes"
+                  title="Portfólio"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="membro">
+              <div class="imagem-placeholder membro__foto">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2c-4.2 0-8 2.2-8 5v2h16v-2c0-2.8-3.8-5-8-5Z"
+                  />
+                </svg>
+                <span>Foto do integrante</span>
+              </div>
+              <h3 class="membro__nome">Maria Eduarda Pereira</h3>
+              <p class="membro__descricao">
+                Breve descrição sobre o integrante e sua atuação no projeto.
+              </p>
+              <div class="membro__redes">
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="GitHub de Maria Eduarda Pereira"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6.99.07 1.52 1.03 1.52 1.03.88 1.52 2.32 1.08 2.89.82.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="LinkedIn de Maria Eduarda Pereira"
+                  title="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.74c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.74h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="Portfólio de Maria Eduarda Pereira"
+                  title="Portfólio"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="membro">
+              <div class="imagem-placeholder membro__foto">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2c-4.2 0-8 2.2-8 5v2h16v-2c0-2.8-3.8-5-8-5Z"
+                  />
+                </svg>
+                <span>Foto do integrante</span>
+              </div>
+              <h3 class="membro__nome">Matheus Costa</h3>
+              <p class="membro__descricao">
+                Breve descrição sobre o integrante e sua atuação no projeto.
+              </p>
+              <div class="membro__redes">
+                <a
+                  href="https://github.com/Matheusccp2"
+                  class="membro__link"
+                  aria-label="GitHub de Matheus Costa"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6.99.07 1.52 1.03 1.52 1.03.88 1.52 2.32 1.08 2.89.82.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://linkedin.com/in/Matheusccp2"
+                  class="membro__link"
+                  aria-label="LinkedIn de Matheus Costa"
+                  title="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.74c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.74h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://myportfolio-matheusccp2.vercel.app/"
+                  class="membro__link"
+                  aria-label="Portfólio de Matheus Costa"
+                  title="Portfólio"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="membro">
+              <div class="imagem-placeholder membro__foto">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2c-4.2 0-8 2.2-8 5v2h16v-2c0-2.8-3.8-5-8-5Z"
+                  />
+                </svg>
+                <span>Foto do integrante</span>
+              </div>
+              <h3 class="membro__nome">Rene Dias</h3>
+              <p class="membro__descricao">
+                Breve descrição sobre o integrante e sua atuação no projeto.
+              </p>
+              <div class="membro__redes">
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="GitHub de Rene Dias"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6.99.07 1.52 1.03 1.52 1.03.88 1.52 2.32 1.08 2.89.82.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="LinkedIn de Rene Dias"
+                  title="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.74c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.74h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="membro__link"
+                  aria-label="Portfólio de Rene Dias"
+                  title="Portfólio"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="secao projetos">
+        <div class="container">
+          <h2 class="secao__titulo">Projetos</h2>
+          <p class="secao__intro">
+            Os projetos desenvolvidos pela equipe serão adicionados aqui
+            conforme forem concluídos. Os cards abaixo são um exemplo de como
+            cada um vai aparecer.
+          </p>
+
+          <div class="projetos__grid">
+            <!-- EDITAR: duplique este bloco <article> para cada projeto concluído -->
+            <article class="projeto">
+              <div class="imagem-placeholder projeto__imagem">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2v10h14V7H5Zm2 8 3.5-4.5 2.5 3 3-4L18 15H7Z"
+                  />
+                </svg>
+                <span>Captura de tela do projeto</span>
+              </div>
+              <div class="projeto__conteudo">
+                <h3 class="projeto__titulo">Nome do projeto</h3>
+                <p class="projeto__descricao">
+                  Breve descrição do projeto, as tecnologias usadas e o problema
+                  que ele resolve.
+                </p>
+                <div class="projeto__links">
+                  <a href="#" class="projeto__link">Repositório</a>
+                  <a href="#" class="projeto__link">Demonstração</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projeto">
+              <div class="imagem-placeholder projeto__imagem">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2v10h14V7H5Zm2 8 3.5-4.5 2.5 3 3-4L18 15H7Z"
+                  />
+                </svg>
+                <span>Captura de tela do projeto</span>
+              </div>
+              <div class="projeto__conteudo">
+                <h3 class="projeto__titulo">Nome do projeto</h3>
+                <p class="projeto__descricao">
+                  Breve descrição do projeto, as tecnologias usadas e o problema
+                  que ele resolve.
+                </p>
+                <div class="projeto__links">
+                  <a href="#" class="projeto__link">Repositório</a>
+                  <a href="#" class="projeto__link">Demonstração</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projeto">
+              <div class="imagem-placeholder projeto__imagem">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2v10h14V7H5Zm2 8 3.5-4.5 2.5 3 3-4L18 15H7Z"
+                  />
+                </svg>
+                <span>Captura de tela do projeto</span>
+              </div>
+              <div class="projeto__conteudo">
+                <h3 class="projeto__titulo">Nome do projeto</h3>
+                <p class="projeto__descricao">
+                  Breve descrição do projeto, as tecnologias usadas e o problema
+                  que ele resolve.
+                </p>
+                <div class="projeto__links">
+                  <a href="#" class="projeto__link">Repositório</a>
+                  <a href="#" class="projeto__link">Demonstração</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="secao contato">
+        <div class="container">
+          <h2 class="secao__titulo">Contato</h2>
+          <p class="secao__intro">
+            Tem alguma dúvida, sugestão ou proposta para a equipe? Envie uma
+            mensagem pelo formulário abaixo.
+          </p>
+
+          <div class="contato__grid">
+            <form class="form" id="formContato" novalidate>
+              <div class="form__campo">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form__campo">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form__campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="botao botao--primario">
+                Enviar mensagem
+              </button>
+              <p class="form__nota">
+                Ao enviar, uma nova issue será aberta no repositório da equipe
+                no GitHub para que possamos responder.
+              </p>
+            </form>
+
+            <div class="contato__github">
+              <h3>Prefere falar direto?</h3>
+              <p>
+                Acesse a organização da equipe no GitHub e acompanhe o que
+                estamos construindo.
+              </p>
+              <!-- EDITAR: atualize este link para a URL real da organização no GitHub -->
+              <a
+                href="https://github.com/SyncSix"
+                target="_blank"
+                rel="noopener"
+                class="botao botao--contorno"
+              >
+                Abrir GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container rodape__container">
+        <p>
+          &copy; <span id="anoAtual">2026</span> SyncSix — Projeto Integrador,
+          Fatec Votorantim.
+        </p>
+        <a href="https://github.com/SyncSix" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+      </div>
+    </footer>
+
+    <script type="module" src="src/js/index.js"></script>
+  </body>
+</html>
