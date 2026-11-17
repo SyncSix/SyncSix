@@ -56,14 +56,14 @@ SyncSix/
 ├── README.md                  # Este arquivo
 │
 └── src/
-│   ├── images/                # Quatro imagens e logotipos da SyncSix
+│   ├── images/                # Imagens e logotipos da SyncSix
 │   │
 │   ├── js/                    # Módulos JavaScript (ES6)
 │   │   ├── index.js           # Inicializa os módulos da página
 │   │   ├── config.js          # Configuração do GitHub
 │   │   ├── menu.js            # Menu responsivo e estados de acessibilidade
 │   │   ├── form.js            # Validação de email e formulário
-│   │   └── footer.js          # Atualização de ano e links
+│   │   └── footer.js          # Atualização do ano do rodapé
 │   │
 │   └── styles/                # Estilos compartilhados
 │       ├── index.css          # Importação centralizada
@@ -106,7 +106,11 @@ Abra `http://localhost:8000` no navegador. Encerre o servidor com `Ctrl+C`. Abri
 
 ### Integrantes
 
-Edite os seis cards `.membro` de `index.html`, na seção `#equipe`, preservando a ordem e os estilos existentes. Substitua o placeholder de foto somente por uma imagem confirmada, mantendo a classe `.membro__foto` e fornecendo um texto alternativo adequado.
+Edite os seis cards `.membro` de `index.html`, na seção `#equipe`, preservando a ordem e os estilos compartilhados. Cada integrante é apresentado pelas iniciais, pelo nome, pela função, pela descrição e por seus canais de contato. A seção não utiliza fotografias nem áreas reservadas para imagens.
+
+Atualize as iniciais em `.membro__iniciais`, usando a primeira letra do primeiro e do último nome. A numeração em `.membro__indice` acompanha a ordem dos seis integrantes. Iniciais e numeração são decorativas; o nome completo permanece no título de cada card.
+
+Edite `.membro__funcao` para informar a função no grupo, exibida logo abaixo do nome. Matheus Costa está identificado como Desenvolvedor; os demais permanecem com “Função a definir” até a confirmação de suas atribuições.
 
 Os perfis ainda não informados usam `span.membro__link`, com rótulos de confirmação pendente. Quando houver uma URL real, substitua o `span` por um link com a mesma classe, nome acessível e, se abrir outra aba, `target="_blank" rel="noopener"`. Não utilize `href="#"` para simular um destino.
 
@@ -114,7 +118,7 @@ Os perfis ainda não informados usam `span.membro__link`, com rótulos de confir
 
 Edite ou duplique um `article.projeto` dentro de `.projetos__grid`. Preserve `.projeto__imagem`, `.projeto__conteudo`, título, descrição e área de links. O grid compartilhado acomoda novos cards sem uma quantidade fixa em JavaScript.
 
-Informe nome, objetivo, contexto e situação com dados confirmados. Enquanto faltarem capturas e URLs, mantenha placeholders e textos não clicáveis em `.projeto__links`. Quando os links forem adicionados, confira também o comportamento de `atualizarLinksGithub()` em `src/js/footer.js`: sua regra atual reescreve endereços que contêm `github.com/SyncSix` para a organização, inclusive caminhos de repositórios.
+Informe nome, objetivo, contexto e situação com dados confirmados. Enquanto faltarem capturas e URLs, mantenha placeholders e textos não clicáveis em `.projeto__links`. Edite os destinos diretamente no atributo `href` de cada link em `index.html`; os scripts não reescrevem esses endereços. `src/js/footer.js` cuida somente do ano exibido no rodapé. A configuração do GitHub em `src/js/config.js` é usada pelo formulário de contato.
 
 ### Identidade e metadados
 
@@ -142,19 +146,19 @@ A configuração usa `CONFIG.github.org` e `CONFIG.github.repo` em `src/js/confi
 
 | Integrante           | Papel / Atuação |
 | :------------------- | :-------------- |
-| **Guilherme Augusto**| _A definir_     |
-| **Leonardo Vinicius**| _A definir_     |
-| **Maria Eduarda Fernandes**| _A definir_     |
-| **Maria Eduarda Pereira**| _A definir_     |
-| **Matheus Costa**| _A definir_     |
-| **Rene Dias**| _A definir_     |
+| **Guilherme Augusto**| Designer    |
+| **Leonardo Vinicius**| Desenvolvedor     |
+| **Maria Eduarda Fernandes**| Banco de Dados     |
+| **Maria Eduarda Pereira**| Banco de Dados     |
+| **Matheus Costa**| Desenvolvedor   |
+| **Rene Dias**| Documentação     |
 
 ---
 
 **Curso:** Desenvolvimento de Software Multiplataforma  
 **Instituição:** Fatec Votorantim  
 
-Fotografias, descrições individuais, funções e redes sociais pendentes serão complementadas com informações confirmadas. Os links de GitHub, LinkedIn e portfólio de Matheus Costa já presentes na página foram preservados.
+Descrições individuais, funções e redes sociais pendentes serão complementadas com informações confirmadas. Os links de GitHub, LinkedIn e portfólio de Matheus Costa já presentes na página foram preservados.
 
 ---
 
@@ -166,7 +170,7 @@ Fotografias, descrições individuais, funções e redes sociais pendentes serã
 
 ## Pendências
 
-- Fotografias, apresentações individuais, funções e redes sociais ainda não fornecidas.
+- Apresentações individuais, funções e redes sociais ainda não fornecidas.
 - Capturas, repositórios e demonstrações dos projetos.
 - Identificação completa do projeto e do hackathon relacionado à NASA, participantes e eventuais resultados comprovados.
 - URL e imagem oficiais para os metadados Open Graph.
