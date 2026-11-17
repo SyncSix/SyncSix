@@ -4,7 +4,7 @@
 
 <br>
 
-# SyncSix — Projeto Integrador
+# SyncSix — Equipe e portfólio de projetos
 
 <div align="center">
 
@@ -12,53 +12,60 @@
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://www.javascript.com/)
 
-Landing page da equipe **SyncSix**, desenvolvida para o Projeto Integrador do curso de **Desenvolvimento de Software Multiplataforma** da **Fatec Votorantim**.
+Portfólio institucional da **SyncSix**, uma equipe de seis estudantes de **Desenvolvimento de Software Multiplataforma** da **Fatec Votorantim**. Unimos aprendizado, criatividade e colaboração em projetos acadêmicos, hackathons e desafios tecnológicos.
 
-[Visualizar ao vivo](https://syncsix.github.io/SyncSix) • [Sobre o projeto](#-sobre-o-projeto) • [Estrutura](#-estrutura) • [Desenvolvimento](#-desenvolvimento)
+[Landing Page](https://syncsix.github.io/SyncSix) • [Organização no GitHub](https://github.com/SyncSix)
 
 </div>
 
 ---
 
-## 🎯 Sobre o projeto
+## Sobre a Landing Page
 
-A **SyncSix** é uma equipe de seis alunos responsável pelo desenvolvimento de um **site de governança corporativa** para o **Grupo Panna**, integrando conteúdo das seis disciplinas do semestre:
+Este repositório contém o site de apresentação da equipe, seus integrantes, projetos e canais de contato. A página acompanha a trajetória da SyncSix e permite apresentar novas iniciativas com os mesmos componentes visuais.
 
-- **Algoritmos** — Lógica de programação e estrutura das funcionalidades
-- **Banco de Dados** — Modelagem e armazenamento de informações
-- **Desenvolvimento Web** — Construção do front-end e integração
-- **Design Digital** — Identidade visual, layout e UX
-- **Engenharia de Software** — Requisitos, processo e documentação
-- **Sistemas Computacionais** — Infraestrutura e hospedagem
+As seções são Sobre, Equipe, Projetos e Contato. O SITE é um dos projetos apresentados; esta Landing Page não é a aplicação de gestão de estágios.
 
-### Tecnologia
+## Projetos
 
-- **Sem dependências externas** — HTML, CSS e JavaScript puros
-- **Sem ferramentas de build** — Abrir e rodar diretamente no navegador
-- **Modular** — Código organizado em módulos ES6 com BEM CSS
-- **Responsivo** — Suporte mobile-first, tablet (960px) e desktop
-- **Acessível** — Navegação por teclado, foco visível e scroll suave
+| Projeto | Contexto e situação |
+| --- | --- |
+| **SITE — Sistema Integrado de Trabalho e Estágio** | Projeto Integrador acadêmico em desenvolvimento. Propõe organizar documentos, solicitações e o acompanhamento dos processos de estágio da Fatec Votorantim. |
+| **Projeto do Hackathon da NASA** | Projeto desenvolvido durante um hackathon relacionado à NASA. Nome oficial do projeto e do evento, edição, desafio, solução, tecnologias, participantes e resultados ainda precisam de confirmação. |
+| **Novos projetos em breve** | Espaço reservado a iniciativas futuras; não representa um projeto concluído. |
+
+Capturas de tela, repositórios e demonstrações específicos ainda não foram confirmados. Por isso, os cards usam placeholders e indicações não clicáveis. A menção à NASA é provisória e não implica premiação, parceria ou endosso.
+
+## Tecnologias da Landing Page
+
+- HTML5, CSS3 e JavaScript nativo, organizado em módulos ES.
+- CSS compartilhado para cards, botões e seções, com classes no padrão BEM.
+- Media queries em 960 px e 640 px para reorganizar a página.
+- Fontes IBM Plex Sans e Space Grotesk carregadas pelo Google Fonts, com alternativas locais definidas no CSS.
+- SVGs embutidos e imagens da equipe em `src/images/`.
+
+Não há frameworks, gerenciador de pacotes ou etapa de build. É necessário servir os arquivos por HTTP para carregar os módulos JavaScript corretamente.
 
 ---
 
-## 📁 Estrutura
+## Estrutura
 
 ```
 SyncSix/
 ├── index.html                 # Página principal
 ├── README.md                  # Este arquivo
 │
-├── src/
-│   ├── images/               # Imagens e logos
+└── src/
+│   ├── images/                # Quatro imagens e logotipos da SyncSix
 │   │
 │   ├── js/                    # Módulos JavaScript (ES6)
-│   │   ├── index.js           # Entry point — inicializa a app
+│   │   ├── index.js           # Inicializa os módulos da página
 │   │   ├── config.js          # Configuração do GitHub
-│   │   ├── menu.js            # Menu responsivo (hamburger)
+│   │   ├── menu.js            # Menu responsivo e estados de acessibilidade
 │   │   ├── form.js            # Validação de email e formulário
 │   │   └── footer.js          # Atualização de ano e links
 │   │
-│   └── styles/                # Módulos CSS (BEM methodology)
+│   └── styles/                # Estilos compartilhados
 │       ├── index.css          # Importação centralizada
 │       ├── variables.css      # Design tokens (cores, espaçamento, tipografia)
 │       ├── globals.css        # Reset e estilos base
@@ -76,49 +83,62 @@ SyncSix/
 
 ---
 
-## 🚀 Desenvolvimento
+## Execução local
 
-### Executar localmente
+Clone o repositório e entre na pasta:
 
-1. **Clone o repositório:**
+```sh
+git clone https://github.com/SyncSix/SyncSix.git
+cd SyncSix
+```
 
-   ```bash
-   git clone https://github.com/SyncSix/SyncSix.git
-   cd SyncSix
-   ```
+Com Python 3 instalado, inicie um servidor estático na raiz do projeto:
 
-2. **Abra com um servidor local** (recomendado):
-   - **VS Code**: Instale a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), clique direito em `index.html` → "Open with Live Server"
-   - **Terminal (Python 3)**: `python3 -m http.server` → acesse `http://localhost:8000`
-   - **Terminal (Node.js)**: `npx http-server`
+```sh
+python -m http.server 8000
+```
 
-3. Abra `http://localhost:8000` no navegador
+Se o executável disponível for `python3`, use `python3 -m http.server 8000`. Também é possível utilizar um servidor HTTP do editor já instalado.
 
-### Personalização
+Abra `http://localhost:8000` no navegador. Encerre o servidor com `Ctrl+C`. Abrir `index.html` diretamente por `file://` pode impedir o carregamento dos módulos ES.
 
-Procure por comentários `EDITAR:` no código para encontrar os pontos de customização:
+## Manutenção
 
-- **Logo e cores** → `src/styles/variables.css` (`:root` contém todos os tokens)
-- **Fotos, nomes e bios da equipe** → `index.html` (seção `#equipe`)
-- **Links do GitHub** → `src/js/config.js`
-- **Projetos realizados** → `index.html` (seção `#projetos`)
-- **Open Graph tags** → `index.html` (head, para redes sociais)
+### Integrantes
+
+Edite os seis cards `.membro` de `index.html`, na seção `#equipe`, preservando a ordem e os estilos existentes. Substitua o placeholder de foto somente por uma imagem confirmada, mantendo a classe `.membro__foto` e fornecendo um texto alternativo adequado.
+
+Os perfis ainda não informados usam `span.membro__link`, com rótulos de confirmação pendente. Quando houver uma URL real, substitua o `span` por um link com a mesma classe, nome acessível e, se abrir outra aba, `target="_blank" rel="noopener"`. Não utilize `href="#"` para simular um destino.
+
+### Projetos
+
+Edite ou duplique um `article.projeto` dentro de `.projetos__grid`. Preserve `.projeto__imagem`, `.projeto__conteudo`, título, descrição e área de links. O grid compartilhado acomoda novos cards sem uma quantidade fixa em JavaScript.
+
+Informe nome, objetivo, contexto e situação com dados confirmados. Enquanto faltarem capturas e URLs, mantenha placeholders e textos não clicáveis em `.projeto__links`. Quando os links forem adicionados, confira também o comportamento de `atualizarLinksGithub()` em `src/js/footer.js`: sua regra atual reescreve endereços que contêm `github.com/SyncSix` para a organização, inclusive caminhos de repositórios.
+
+### Identidade e metadados
+
+Preserve logotipos, classes, IDs e a identidade visual aprovada. Atualize título, descrição e Open Graph em `index.html` quando necessário. `og:url` e `og:image` continuam pendentes de uma URL de produção e uma imagem oficiais confirmadas.
+
+Depois de editar, revise desktop, tablet e celular, incluindo 320, 375, 390, 768, 1024 e 1440 px. Confira também o menu mobile, os links, o formulário e o ano automático.
 
 ---
 
-## 💬 Formulário de contato
+## Formulário de contato
 
-O formulário valida email em tempo real e não possui back-end próprio. Ao ser enviado:
+O formulário não possui back-end próprio. O fluxo atual é:
 
-1. ✅ Valida o email contra o padrão: `seu@email.com`
-2. 📋 Abre uma issue no GitHub com nome, email e mensagem pré-preenchidos
-3. 👤 Usuário confirma o envio manualmente na página do GitHub
+1. Validar o e-mail ao sair do campo e ao enviar; a mensagem de erro é removida durante a edição.
+2. Abrir a página de criação de uma issue em `https://github.com/SyncSix/SyncSix/issues/new`, com nome, e-mail e mensagem preenchidos.
+3. Permitir que o visitante revise e confirme a publicação no GitHub, conforme as permissões do repositório e sua conta.
 
-**Configuração**: Edite `GITHUB_ORG` e `GITHUB_REPO` em `src/js/config.js`
+O clique no formulário não publica uma issue automaticamente. As informações confirmadas na issue podem ficar públicas. Não envie dados pessoais ou confidenciais.
+
+A configuração usa `CONFIG.github.org` e `CONFIG.github.repo` em `src/js/config.js`. Os campos Nome e Mensagem têm o atributo `required`, mas, com `novalidate`, o JavaScript atual valida somente o e-mail. Uma ampliação dessa validação deve ser discutida antes de alterar o fluxo.
 
 ---
 
-### 👥 A Equipe
+## Equipe
 
 | Integrante           | Papel / Atuação |
 | :------------------- | :-------------- |
@@ -133,14 +153,24 @@ O formulário valida email em tempo real e não possui back-end próprio. Ao ser
 
 **Curso:** Desenvolvimento de Software Multiplataforma  
 **Instituição:** Fatec Votorantim  
-**Semestre:** 2026  
-**Cliente:** Grupo Panna
+
+Fotografias, descrições individuais, funções e redes sociais pendentes serão complementadas com informações confirmadas. Os links de GitHub, LinkedIn e portfólio de Matheus Costa já presentes na página foram preservados.
 
 ---
 
-## 📄 Licença
+## Links
 
-Este projeto é desenvolvido como atividade acadêmica. Todos os direitos reservados ao Grupo Panna.
+- [Landing Page](https://syncsix.github.io/SyncSix)
+- [Organização SyncSix](https://github.com/SyncSix)
+- [Repositório de apresentação](https://github.com/SyncSix/SyncSix)
+
+## Pendências
+
+- Fotografias, apresentações individuais, funções e redes sociais ainda não fornecidas.
+- Capturas, repositórios e demonstrações dos projetos.
+- Identificação completa do projeto e do hackathon relacionado à NASA, participantes e eventuais resultados comprovados.
+- URL e imagem oficiais para os metadados Open Graph.
+- Definição de uma licença formal: não há arquivo de licença no repositório atual.
 
 ---
 
